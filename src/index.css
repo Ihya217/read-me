@@ -1,13 +1,26 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+/* Add transitions to the links */
+.nav-link {
+  transition: all 0.3s ease;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Define styles for the default state */
+.nav-link {
+  color: white;
+}
+
+/* Define styles for the hover state */
+.nav-link:hover {
+  color: #3b82f6; /* Change to your desired hover color */
+}
+
+/* Define styles for the active state */
+.nav-link.active {
+  color: #047857; /* Change to your desired active color */
 }

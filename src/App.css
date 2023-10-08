@@ -36,3 +36,33 @@
     transform: rotate(360deg);
   }
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html {
+    scroll-behavior: smooth;
+  }
+/* Add transitions to the links */
+.nav-link {
+    transition: all 0.3s ease;
+  }
+  
+  /* Define styles for the default state */
+  .nav-link {
+    color: white;
+  }
+  
+  /* Define styles for the hover state */
+  .nav-link:hover {
+    color: #3b82f6; /* Change to your desired hover color */
+  }
+  
+  /* Define styles for the active state */
+  .nav-link.active {
+    color: #047857; /* Change to your desired active color */
+  }
+  
+  
