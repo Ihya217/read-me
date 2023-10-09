@@ -123,7 +123,7 @@ const App = () => {
  <section id="about" className="min-h-screen flex items-center justify-center">
   <div className="container-about mx-auto flex flex-col md:flex-row text-center">
     <img
-      src="read-me/img/ihya2.jpg"
+      src="./img/ihya2.jpg"
       alt="Foto Anda"
       className="w-full md:w-1/3 rounded-xl mx-auto mb-8 md:mb-0 me-5"
     />
@@ -160,7 +160,7 @@ const App = () => {
       className="rounded-full bg-white bg-opacity-10 p-2 hover:bg-opacity-20 transition duration-300 transform hover:scale-110 relative"
     >
       <img
-        src="read-me/img/google.png"
+        src="./img/google.png"
         alt="Gmail"
         className="w-5 h-5"
       />
@@ -177,7 +177,7 @@ const App = () => {
       className="rounded-full bg-white bg-opacity-10 p-2 hover:bg-opacity-20 transition duration-300 transform hover:scale-110 relative"
     >
       <img
-        src="read-me/img/ig.png"
+        src="./img/ig.png"
         alt="Instagram"
         className="w-5 h-5"
       />
