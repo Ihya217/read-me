@@ -93,7 +93,7 @@ const App = () => {
       {/* Content */}
       <div
         className="flex-grow "
-        style={{ backgroundImage: 'url("http://localhost:3000/read-me/img/bgss.jpg")', backgroundSize: 'cover', backgroundAttachment: 'fixed' }}>
+        style={{ backgroundImage: 'url("/read-me/img/bgss.jpg")', backgroundSize: 'cover', backgroundAttachment: 'fixed' }}>
         {/* Home Section */}
         <section id="home" className="min-h-screen flex items-center mx-auto">
   <div className="container mx-auto p-40 text-left">
