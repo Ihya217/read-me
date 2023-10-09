@@ -193,7 +193,6 @@ const App = () => {
         <li>- Runner-Up Of Genshin Impact Tournament </li>
         <li>- Design Winner in Classmeeting </li>
         <li>- Futsal Runner Up in Classmeeting</li>
-        <li>- Futsal Runner Up in Classmeeting </li>
         <li>- Band Winner in Classmeeting </li>
       </ul>
 
