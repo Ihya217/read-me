@@ -18,10 +18,8 @@ a:active {
   color: #FF0000; /* Ganti dengan warna yang Anda inginkan saat dipilih */
 }
 
-.container-about {
-  padding-left: 70px; /* Ubah padding pada layar seluler */
-  padding-right: 10%;
-}
+
+
 
 /* CSS untuk menghilangkan garis bawah dari tautan */
 a {
@@ -30,32 +28,49 @@ a {
 
 
 @media (max-width: 768px) {
-  .container {/* Ubah padding pada layar seluler */
-    padding-right: 10%; /* Ubah padding pada layar seluler */
-  }
+  /* .container {
+    padding-right: 10%; 
+  } */
   .text-xl {
     font-size: 1rem;
 
   }
 
-  .container-about {/* Ubah padding pada layar seluler */
-    padding-right: 10%;
+  .container-about {
+    padding-left: 70px; /* Ubah padding pada layar seluler */
+    margin: auto;
+    margin-right: 10%;
+    display: flex;
+    margin-bottom: 100px;
+    justify-content: center; /* Rata tengah secara horizontal */
   }
+  
+  .container {/* Ubah padding pada layar seluler */
+    margin: auto;
+    padding: 100px;
+    display: flex;
+    justify-content: center; /* Rata tengah secara horizontal */
+    align-items: center; /* Rata tengah secara vertikal */
+  
+  
+  }
+
+
 
 
 
   .text-3xl {
-    font-size: 1.1rem; /* Ukuran font yang lebih kecil pada layar seluler */
-    margin-bottom: 10px; 
+    font-size: 1.3rem; /* Ukuran font yang lebih kecil pada layar seluler */
+    margin-bottom: 13px; 
   }
 
   .text-2xl{
-    font-size: 0.8rem; 
+    font-size: 0.9rem; 
   }
 
   .text-9xl {
-    font-size: 2.8rem; 
-    margin-bottom: 20px; /* Ukuran font yang lebih kecil pada layar seluler */
+    font-size: 4rem; 
+    margin-bottom: 25px; /* Ukuran font yang lebih kecil pada layar seluler */
   }
 
   /* Menambahkan margin ke konten agar tidak mengenai navbar */
@@ -105,11 +120,6 @@ a {
     right: 0.8rem; /* Atur jarak dari kanan */
   }
 
-  .sosmed a {
-    /* Sesuaikan gaya ikon pada perangkat seluler di sini */
-    /* Contoh: */
-    padding: 0.5rem;
-  }
 }
 
 

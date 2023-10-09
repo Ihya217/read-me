@@ -124,7 +124,7 @@ const App = () => {
         style={{ backgroundImage: 'url("/read-me/img/bgss.jpg")', backgroundSize: 'cover', backgroundAttachment: 'fixed' }}>
         {/* Home Section */}
         <section id="home" className="min-h-screen flex items-center mx-auto">
-  <div className="container-about mx-auto flex flex-col md:flex-row text-left">
+  <div className="container mx-auto flex flex-col md:flex-row text-left">
     <div>
       
       <p className="text-3xl font-semibold text-white mb-14 font-mono">M. Ihya Ulumuddin</p>
@@ -137,36 +137,74 @@ const App = () => {
 
         {/* Project Section */}
         <section id="project" className="min-h-screen flex items-center mx-auto mb-5">
-          <div className="container-about mx-auto text-left">
-            <div className="container-about mx-auto p-6 border border-white rounded-lg shadow-md">
-              <h1 className="text-3xl font-semibold text-white">Project Section</h1>
-              {/* Isi dari bagian Project */}
-            </div>
-          </div>
-        </section>
+  {/* Achievement */}
+  <div className="container mx-auto text-left">
+    <div className="container mx-auto p-6 flex flex-col items-center">
+      <h1 className="text-3xl font-semibold text-white font-mono">Project Section</h1>
+      <h1 className="text-3xl font-semibold text-white font-mono">Coming Soon</h1>
+      {/* Isi dari bagian Project */}
+    </div>
+  </div>
+</section>
 
-          {/* Project Section */}
-          <section id="exp" className="min-h-screen flex items-center mx-auto">
-          <div className="container-about mx-auto flex flex-col md:flex-row text-center">
+
+
+
+
+
+
+        
+          {/* Exp Section */}
+    <section id="exp" className="min-h-screen flex items-center justify-center">
+    <div className='row'>
+    <div className="container-about mx-auto flex flex-col md:flex-row text-center mb-20">
     <img
       src="./img/bg.jpg"
       alt="Foto Anda"
       className="w-full md:w-1/3 rounded-xl mx-auto mb-8 md:mb-0 me-5"
     />
-    <div className="md:w-1/2   text-center p-6 border border-white rounded-lg shadow-md">
-      <h1 className="text-4xl font-semibold font-mono text-white mb-3">Achievements</h1>
-      <ul className="text-2xl text-white custom-tracking">
+    <div className="md:w-1/2 mx-auto ps-1 text-left">
+      <h1 className="text-5xl font-semibold font-mono text-white mb-6">Achievements</h1>
+      <ul className="text-2xl text-white custom-tracking space-y-3 sm:space-y-5 md:space-y-5">
         <li>- 8 Times Got First Rank in Elementary School </li>
         <li>- Top 8 Student In Middle School </li>
         <li>- Runner-Up Of Genshin Impact Tournament </li>
         <li>- Design Winner in Classmeeting </li>
+        <li>- Futsal Runner Up in Classmeeting</li>
         <li>- Futsal Runner Up in Classmeeting </li>
-        <li>- Futsal Runner Up in Classmeeting </li>
-        
+        <li>- Band Winner in Classmeeting </li>
       </ul>
-    </div>
+    </div>  
   </div>
-        </section>
+
+{/* Experience */}
+<div className="container-about mx-auto flex flex-col md:flex-row text-center">
+    <img
+      src="./img/bg.jpg"
+      alt="Foto Anda"
+      className="w-full md:w-1/3 rounded-xl mx-auto mb-8 md:mb-0 me-5"
+    />
+
+    <div className="md:w-1/2 mx-auto ps-1 text-left">
+      <h1 className="text-5xl font-semibold font-mono text-white mb-6">Experience</h1>
+      <ul className="text-2xl text-white custom-tracking space-y-3 sm:space-y-5 md:space-y-5">
+        <li>- 8 Times Got First Rank in Elementary School </li>
+        <li>- Top 8 Student In Middle School </li>
+        <li>- Runner-Up Of Genshin Impact Tournament </li>
+        <li>- Design Winner in Classmeeting </li>
+        <li>- Futsal Runner Up in Classmeeting</li>
+        <li>- Futsal Runner Up in Classmeeting </li>
+        <li>- Band Winner in Classmeeting </li>
+      </ul>
+
+  </div>
+
+    
+  </div>
+  </div>
+
+
+  </section>
 
 
 
@@ -188,19 +226,18 @@ const App = () => {
   </div>
 </section>
 
-
-
-
-
         {/* Contact Section */}
-        <section id="contact" className="min-h-screen flex items-center justify-center">
-          <div className="container-about mx-auto flex flex-col md:flex-row text-center">
-            <div className="container mx-auto p-6 border border-white rounded-lg shadow-md">
-              <h1 className="text-3xl font-semibold text-white">Contact Section</h1>
-              {/* Isi dari bagian Contact */}
-            </div>
-          </div>
-        </section>
+        <section id="contact" className="min-h-screen flex items-center mx-auto mb-5">
+  {/* Achievement */}
+  <div className="container mx-auto text-left">
+    <div className="container mx-auto p-6 flex flex-col items-center">
+      <h1 className="text-3xl font-semibold text-white mb-3 font-mono">Contact Section</h1>
+      <h1 className="text-3xl font-semibold text-white font-mono">Coming Soon</h1>
+      {/* Isi dari bagian Project */}
+    </div>
+  </div>
+</section>
+
 
         <div className="fixed sosmed top-5 right-10 p-4">
   <div className="flex flex-col gap-4">
