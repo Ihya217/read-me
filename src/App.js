@@ -39,7 +39,7 @@ const App = () => {
   return (
     <div className="fontFamily: 'Araboto Medium, sans-serif' flex">
       {/* Navbar */}
-      <nav className="flex flex-col fixed top-0 left-0 h-full bg-transparent text-white mt-20 p-4">
+      <nav className="flex flex-col fixed top-0 left-0 h-full bg-transparent text-white mt-20 ps-1">
         {/* ... (kode lainnya) */}
         <ul className=" ms-4 space-y-14 sm:space-y-14 md:space-y-20 ">
         <li className="flex flex-row transform -rotate-90 origin-bottom">
