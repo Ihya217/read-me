@@ -30,8 +30,7 @@ a {
 
 
 @media (max-width: 768px) {
-  .container {
-    padding-left: 25%; /* Ubah padding pada layar seluler */
+  .container {/* Ubah padding pada layar seluler */
     padding-right: 10%; /* Ubah padding pada layar seluler */
   }
   .text-xl {
@@ -39,8 +38,7 @@ a {
 
   }
 
-  .container-about {
-    padding-left: 25%; /* Ubah padding pada layar seluler */
+  .container-about {/* Ubah padding pada layar seluler */
     padding-right: 10%;
   }
 
@@ -49,6 +47,10 @@ a {
   .text-3xl {
     font-size: 1.1rem; /* Ukuran font yang lebih kecil pada layar seluler */
     margin-bottom: 10px; 
+  }
+
+  .text-2xl{
+    font-size: 0.8rem; 
   }
 
   .text-9xl {

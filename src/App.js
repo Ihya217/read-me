@@ -3,12 +3,14 @@ import React, { Component, useState } from 'react';
 const App = () => {
   const [isHomeClicked, setHomeClicked] = useState(false);
   const [isProjectClicked, setProjectClicked] = useState(false);
+  const [isExpClicked, setExpClicked] = useState(false);
   const [isAboutClicked, setAboutClicked] = useState(false);
   const [isContactClicked, setContactClicked] = useState(false);
 
   const handleHomeClick = () => {
     setHomeClicked(true);
     setProjectClicked(false);
+    setExpClicked(false);
     setAboutClicked(false);
     setContactClicked(false);
   };
@@ -16,14 +18,24 @@ const App = () => {
   const handleProjectClick = () => {
     setHomeClicked(false);
     setProjectClicked(true);
+    setExpClicked(false);
     setAboutClicked(false);
     setContactClicked(false);
   };
   // <ul className=" ms-4 space-y-14 sm:space-y-14 md:space-y-20 "></ul>
 
+  const handleExpClick = () => {
+    setHomeClicked(false);
+    setProjectClicked(false);
+    setExpClicked(true);
+    setAboutClicked(false);
+    setContactClicked(false);
+  };
+
   const handleAboutClick = () => {
     setHomeClicked(false);
     setProjectClicked(false);
+    setExpClicked(false);
     setAboutClicked(true);
     setContactClicked(false);
   };
@@ -31,6 +43,7 @@ const App = () => {
   const handleContactClick = () => {
     setHomeClicked(false);
     setProjectClicked(false);
+    setExpClicked(false);
     setAboutClicked(false);
     setContactClicked(true);
   };
@@ -42,6 +55,7 @@ const App = () => {
       <nav className="flex flex-col fixed top-0 left-0 h-full bg-transparent text-white mt-20 ps-1">
         {/* ... (kode lainnya) */}
         <ul className=" ms-4 space-y-14 sm:space-y-14 md:space-y-20 ">
+          
         <li className="flex flex-row transform -rotate-90 origin-bottom">
           <a
             href="#home"
@@ -53,6 +67,7 @@ const App = () => {
             Home
           </a>
         </li>
+
         <li className="flex flex-row transform -rotate-90 origin-bottom">
           <a
             href="#project"
@@ -64,6 +79,18 @@ const App = () => {
             Project
           </a>
         </li>
+
+        <li className="flex flex-row transform -rotate-90 origin-bottom">
+          <a
+            href="#exp"
+            onClick={handleExpClick}
+            className={`text-xl ${
+              isExpClicked ? 'text-red-500' : 'hover:text-blue-500'
+            }`}>
+            Exp
+          </a>
+        </li>
+
         <li className="flex flex-row transform -rotate-90 origin-bottom">
           <a
             href="#about"
@@ -75,6 +102,7 @@ const App = () => {
             About
           </a>
         </li>
+
         <li className="flex flex-row transform -rotate-90 origin-bottom">
           <a
             href="#contact"
@@ -96,7 +124,7 @@ const App = () => {
         style={{ backgroundImage: 'url("/read-me/img/bgss.jpg")', backgroundSize: 'cover', backgroundAttachment: 'fixed' }}>
         {/* Home Section */}
         <section id="home" className="min-h-screen flex items-center mx-auto">
-  <div className="container mx-auto p-40 text-left">
+  <div className="container-about mx-auto flex flex-col md:flex-row text-left">
     <div>
       
       <p className="text-3xl font-semibold text-white mb-14 font-mono">M. Ihya Ulumuddin</p>
@@ -108,14 +136,38 @@ const App = () => {
 
 
         {/* Project Section */}
-        <section id="project" className="min-h-screen flex items-center mx-auto">
-          <div className="container mx-auto p-40 text-left">
-            <div className="container mx-auto p-6 border border-white rounded-lg shadow-md">
+        <section id="project" className="min-h-screen flex items-center mx-auto mb-5">
+          <div className="container-about mx-auto text-left">
+            <div className="container-about mx-auto p-6 border border-white rounded-lg shadow-md">
               <h1 className="text-3xl font-semibold text-white">Project Section</h1>
               {/* Isi dari bagian Project */}
             </div>
           </div>
         </section>
+
+          {/* Project Section */}
+          <section id="exp" className="min-h-screen flex items-center mx-auto">
+          <div className="container-about mx-auto flex flex-col md:flex-row text-center">
+    <img
+      src="./img/bg.jpg"
+      alt="Foto Anda"
+      className="w-full md:w-1/3 rounded-xl mx-auto mb-8 md:mb-0 me-5"
+    />
+    <div className="md:w-1/2   text-center p-6 border border-white rounded-lg shadow-md">
+      <h1 className="text-4xl font-semibold font-mono text-white mb-3">Achievements</h1>
+      <ul className="text-2xl text-white custom-tracking">
+        <li>- 8 Times Got First Rank in Elementary School </li>
+        <li>- Top 8 Student In Middle School </li>
+        <li>- Runner-Up Of Genshin Impact Tournament </li>
+        <li>- Design Winner in Classmeeting </li>
+        <li>- Futsal Runner Up in Classmeeting </li>
+        <li>- Futsal Runner Up in Classmeeting </li>
+        
+      </ul>
+    </div>
+  </div>
+        </section>
+
 
 
 
@@ -142,7 +194,7 @@ const App = () => {
 
         {/* Contact Section */}
         <section id="contact" className="min-h-screen flex items-center justify-center">
-          <div className="container mx-auto p-40 text-left">
+          <div className="container-about mx-auto flex flex-col md:flex-row text-center">
             <div className="container mx-auto p-6 border border-white rounded-lg shadow-md">
               <h1 className="text-3xl font-semibold text-white">Contact Section</h1>
               {/* Isi dari bagian Contact */}
