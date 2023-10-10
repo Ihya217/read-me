@@ -189,20 +189,25 @@ const App = () => {
             className="w-full md:w-1/3 rounded-xl mx-auto mb-8 md:mb-0 me-5"
           />
 
-          <div className="md:w-1/2 mx-auto ps-1 text-center md:text-left">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold font-mono text-white mb-6">Experience</h1>
-            <ul className="text-xl md:text-lg lg:text-base text-white custom-tracking space-y-3 sm:space-y-5 md:space-y-5">
-              <li>- 8 Times Got First Rank in Elementary School </li>
-              <li>- Top 8 Student In Middle School </li>
-              <li>- Runner-Up Of Genshin Impact Tournament </li>
-              <li>- Design Winner in Classmeeting </li>
-              <li>- Futsal Runner Up in Classmeeting</li>
-              <li>- Band Winner in Classmeeting </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+    <div className="md:w-1/2 mx-auto ps-1 text-left">
+      <h1 className="text-5xl font-semibold font-mono text-white mb-6">Experience</h1>
+      <ul className="text-2xl text-white custom-tracking space-y-3 sm:space-y-5 md:space-y-5">
+        <li>- 8 Times Got First Rank in Elementary School </li>
+        <li>- Top 8 Student In Middle School </li>
+        <li>- Runner-Up Of Genshin Impact Tournament </li>
+        <li>- Design Winner in Classmeeting </li>
+        <li>- Futsal Runner Up in Classmeeting</li>
+        <li>- Band Winner in Classmeeting </li>
+      </ul>
+
+  </div>
+
+    
+  </div>
+  </div>
+
+
+  </section>
 
 
 
