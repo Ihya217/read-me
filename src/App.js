@@ -119,111 +119,112 @@ const App = () => {
       </nav>
 
       {/* Content */}
-      <div
-        className="flex-grow "
-        style={{ backgroundImage: 'url("/read-me/img/bgss.jpg")', backgroundSize: 'cover', backgroundAttachment: 'fixed' }}>
+      <div className="flex-grow bg-cover bg-fixed bg-no-repeat ps-20 pe-10"
+         style={{ backgroundImage: 'url("/read-me/img/bgss.jpg")' }}>
         {/* Home Section */}
         <section id="home" className="min-h-screen flex items-center mx-auto">
-  <div className="container mx-auto flex flex-col md:flex-row text-left">
-    <div>
-      
-      <p className="text-3xl font-semibold text-white mb-14 font-mono">M. Ihya Ulumuddin</p>
-      <h1 className="text-9xl font-semibold text-white mb-14">Software+</h1>
-      <h1 className="text-9xl font-semibold text-white">Developer</h1>
-    </div>
-  </div>
-</section>
+      <div className="container mx-auto flex flex-col md:flex-row text-left md:text-left">
+        <div>
+        <p className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold text-white mb-4 font-mono">
+  M. Ihya Ulumuddin
+</p>
+          <h1 className="text-5xl md:text-7xl lg:text-9xl xl:text-10xl font-semibold text-white mb-4">
+            Software+
+          </h1>
+          <h1 className="text-5xl md:text-7xl lg:text-9xl xl:text-10xl font-semibold text-white">
+            Developer
+          </h1>
+        </div>
+      </div>
+    </section>
 
 
         {/* Project Section */}
         <section id="project" className="min-h-screen flex items-center mx-auto mb-5">
-  {/* Achievement */}
-  <div className="container mx-auto text-left">
-    <div className="container mx-auto p-6 flex flex-col items-center">
-      <h1 className="text-3xl font-semibold text-white font-mono">Project Section</h1>
-      <h1 className="text-3xl font-semibold text-white font-mono">Coming Soon</h1>
-      {/* Isi dari bagian Project */}
-    </div>
-  </div>
-</section>
+      {/* Achievement */}
+      <div className="container mx-auto text-center md:text-left">
+        <div className="container mx-auto p-6 flex flex-col items-center">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-white font-mono mb-4">
+            Project Section
+          </h1>
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-white font-mono">
+            Coming Soon
+          </h1>
+          {/* Isi dari bagian Project */}
+        </div>
+      </div>
+    </section>
 
 
 
 
 
-
-
-        
-          {/* Exp Section */}
     <section id="exp" className="min-h-screen flex items-center justify-center">
-    <div className='row'>
-    <div className="container-about mx-auto flex flex-col md:flex-row text-center mb-20">
-    <img
-      src="./img/bg.jpg"
-      alt="Foto Anda"
-      className="w-full md:w-1/3 rounded-xl mx-auto mb-8 md:mb-0 me-5"
-    />
-    <div className="md:w-1/2 mx-auto ps-1 text-left">
-      <h1 className="text-5xl font-semibold font-mono text-white mb-6">Achievements</h1>
-      <ul className="text-2xl text-white custom-tracking space-y-3 sm:space-y-5 md:space-y-5">
-        <li>- 8 Times Got First Rank in Elementary School </li>
-        <li>- Top 8 Student In Middle School </li>
-        <li>- Runner-Up Of Genshin Impact Tournament </li>
-        <li>- Design Winner in Classmeeting </li>
-        <li>- Futsal Runner Up in Classmeeting</li>
-        <li>- Futsal Runner Up in Classmeeting </li>
-        <li>- Band Winner in Classmeeting </li>
-      </ul>
-    </div>  
-  </div>
+      <div className='container mx-auto row'>
+        {/* Achievements */}
+        <div className="container-about mx-auto flex flex-col md:flex-row text-center mb-20">
+          <img
+            src="./img/bg.jpg"
+            alt="Foto Anda"
+            className="w-full md:w-1/3 rounded-xl mx-auto mb-8 md:mb-0 me-5"
+          />
+          <div className="md:w-1/2 mx-auto ps-1 text-center md:text-left">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold font-mono text-white mb-6">Achievements</h1>
+            <ul className="text-xl md:text-lg lg:text-base text-white custom-tracking space-y-3 sm:space-y-5 md:space-y-5">
+              <li>- 8 Times Got First Rank in Elementary School </li>
+              <li>- Top 8 Student In Middle School </li>
+              <li>- Runner-Up Of Genshin Impact Tournament </li>
+              <li>- Design Winner in Classmeeting </li>
+              <li>- Futsal Runner Up in Classmeeting</li>
+              <li>- Band Winner in Classmeeting </li>
+            </ul>
+          </div>
+        </div>
 
-{/* Experience */}
-<div className="container-about mx-auto flex flex-col md:flex-row text-center">
-    <img
-      src="./img/bg.jpg"
-      alt="Foto Anda"
-      className="w-full md:w-1/3 rounded-xl mx-auto mb-8 md:mb-0 me-5"
-    />
+        {/* Experience */}
+        <div className="container-about mx-auto flex flex-col md:flex-row text-center">
+          <img
+            src="./img/bg.jpg"
+            alt="Foto Anda"
+            className="w-full md:w-1/3 rounded-xl mx-auto mb-8 md:mb-0 me-5"
+          />
 
-    <div className="md:w-1/2 mx-auto ps-1 text-left">
-      <h1 className="text-5xl font-semibold font-mono text-white mb-6">Experience</h1>
-      <ul className="text-2xl text-white custom-tracking space-y-3 sm:space-y-5 md:space-y-5">
-        <li>- 8 Times Got First Rank in Elementary School </li>
-        <li>- Top 8 Student In Middle School </li>
-        <li>- Runner-Up Of Genshin Impact Tournament </li>
-        <li>- Design Winner in Classmeeting </li>
-        <li>- Futsal Runner Up in Classmeeting</li>
-        <li>- Band Winner in Classmeeting </li>
-      </ul>
-
-  </div>
-
-    
-  </div>
-  </div>
-
-
-  </section>
+          <div className="md:w-1/2 mx-auto ps-1 text-center md:text-left">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold font-mono text-white mb-6">Experience</h1>
+            <ul className="text-xl md:text-lg lg:text-base text-white custom-tracking space-y-3 sm:space-y-5 md:space-y-5">
+              <li>- 8 Times Got First Rank in Elementary School </li>
+              <li>- Top 8 Student In Middle School </li>
+              <li>- Runner-Up Of Genshin Impact Tournament </li>
+              <li>- Design Winner in Classmeeting </li>
+              <li>- Futsal Runner Up in Classmeeting</li>
+              <li>- Band Winner in Classmeeting </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
 
 
  {/* About Section */}
  <section id="about" className="min-h-screen flex items-center justify-center">
-  <div className="container-about mx-auto flex flex-col md:flex-row text-center">
-    <img
-      src="./img/ihya2.jpg"
-      alt="Foto Anda"
-      className="w-full md:w-1/3 rounded-xl mx-auto mb-8 md:mb-0 me-5"
-    />
-    <div className="md:w-1/2 mx-auto ps-1 text-left">
-      <h1 className="text-5xl font-semibold font-mono text-white mb-3">Hello there!</h1>
-      <p className="text-2xl text-white custom-tracking">
-        Your First Imperations : "Wow, this kid's a huge Otaku! 😄 I'm Muhammad Ihya Ulumuddin, a Software Developer. I craft digital experiences and stay updated on tech trends. When not coding, I explore anime, manga, and gaming. Technology fuels my creativity, and I love innovative projects. Connect with me for tech talks, anime suggestions, or creative collaborations. Let's make the digital world more exciting! 😄🚀🎮"
-      </p>
-    </div>
-  </div>
-</section>
+      <div className="container-about mx-auto flex flex-col md:flex-row text-center">
+        <img
+          src="./img/ihya2.jpg"
+          alt="Foto Anda"
+          className="w-full md:w-1/3 rounded-xl mx-auto mb-8 md:mb-0 me-5"
+        />
+        <div className="md:w-1/2 mx-auto text-left">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold font-mono text-white mb-3">
+            Hello there!
+          </h1>
+          <p className="text-xl md:text-2xl text-white">
+            Your First Impressions: "Wow, this kid's a huge Otaku! 😄 I'm Muhammad Ihya Ulumuddin, a Software Developer. I craft digital experiences and stay updated on tech trends. When not coding, I explore anime, manga, and gaming. Technology fuels my creativity, and I love innovative projects. Connect with me for tech talks, anime suggestions, or creative collaborations. Let's make the digital world more exciting! 😄🚀🎮"
+          </p>
+        </div>
+      </div>
+    </section>
 
         {/* Contact Section */}
         <section id="contact" className="min-h-screen flex items-center mx-auto mb-5">

@@ -5,6 +5,9 @@
 html {
   scroll-behavior: smooth;
 }
+*{
+  /* outline: 2px solid rgba(255,0,0,0.1); */
+}
 
 .custom-tracking {
   letter-spacing: 1px; /* Ganti nilai ini sesuai kebutuhan Anda */
@@ -14,53 +17,35 @@ body {
   font-family: 'Araboto Medium', sans-serif;
 }
 
-a:active {
-  color: #FF0000; /* Ganti dengan warna yang Anda inginkan saat dipilih */
-}
-
-
-
-
-/* CSS untuk menghilangkan garis bawah dari tautan */
-a {
-  text-decoration: none;
-}
-
-
 @media (max-width: 768px) {
   /* .container {
     padding-right: 10%; 
   } */
-  .text-xl {
+  /* .text-xl {
     font-size: 1rem;
-
   }
 
   .container-about {
-    padding-left: 70px; /* Ubah padding pada layar seluler */
+    padding-left: 70px; 
     margin: auto;
     margin-right: 10%;
     display: flex;
     margin-bottom: 100px;
-    justify-content: center; /* Rata tengah secara horizontal */
+    justify-content: center; 
   }
   
-  .container {/* Ubah padding pada layar seluler */
+  .container {
     margin: auto;
     padding: 100px;
     display: flex;
-    justify-content: center; /* Rata tengah secara horizontal */
-    align-items: center; /* Rata tengah secara vertikal */
+    justify-content: center;
+    align-items: center; 
   
   
   }
 
-
-
-
-
   .text-3xl {
-    font-size: 1.3rem; /* Ukuran font yang lebih kecil pada layar seluler */
+    font-size: 1.3rem; 
     margin-bottom: 13px; 
   }
 
@@ -70,57 +55,15 @@ a {
 
   .text-9xl {
     font-size: 4rem; 
-    margin-bottom: 25px; /* Ukuran font yang lebih kecil pada layar seluler */
+    margin-bottom: 25px;
   }
 
-  /* Menambahkan margin ke konten agar tidak mengenai navbar */
+ 
   .min-h-screen {
-    margin-top: 0px; /* Sesuaikan nilai sesuai dengan kebutuhan Anda */
+    margin-top: 0px; 
     
+  } */
   }
-  .parallax-background {
-    position: relative;
-    width: 100%;
-    height: 100vh; /* Tinggi sesuaikan dengan kebutuhan */
-    background-image: url("http://localhost:3000/read-me/img/bgss.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    overflow: hidden;
-  }
-  
-  /* Animasi paralaks */
-  .parallax-background::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.3); /* Warna latar belakang transparan */
-    animation: parallaxAnimation 10s linear infinite alternate; /* Ubah durasi dan timing sesuai kebutuhan */
-  }
-  
-  @keyframes parallaxAnimation {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(20%); /* Ubah nilai sesuai kebutuhan */
-    }
-  }
-  
-  
-
-  
-}
-
-@media (max-width: 640px) {
-  .sosmed {
-    top: 0.8rem; /* Atur jarak dari atas */
-    right: 0.8rem; /* Atur jarak dari kanan */
-  }
-
-}
 
 
 
