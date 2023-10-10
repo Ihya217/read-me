@@ -53,76 +53,74 @@ const App = () => {
     <div className="fontFamily: 'Araboto Medium, sans-serif' flex">
       {/* Navbar */}
       <nav className="flex flex-col fixed top-0 left-0 h-full bg-transparent text-white mt-20 ps-1">
-        {/* ... (kode lainnya) */}
-        <ul className=" ms-4 space-y-14 sm:space-y-14 md:space-y-20 ">
-          
-        <li className="flex flex-row transform -rotate-90 origin-bottom">
-          <a
-            href="#home"
-            onClick={handleHomeClick}
-            className={`text-xl ${
-              isHomeClicked ? 'text-red-500' : 'hover:text-blue-500'
-            }`}
-          >
-            Home
-          </a>
-        </li>
+  <ul className="ms-4 space-y-14 sm:space-y-14 md:space-y-20">
+    <li className="flex flex-row transform -rotate-90 origin-bottom mb-4 justify-center">
+      <a
+        href="#home"
+        onClick={handleHomeClick}
+        className={`text-base sm:text-lg ${
+          isHomeClicked ? 'text-red-500' : 'hover:text-blue-500'
+        }`}>
+        Home
+      </a>
+    </li>
 
-        <li className="flex flex-row transform -rotate-90 origin-bottom">
-          <a
-            href="#project"
-            onClick={handleProjectClick}
-            className={`text-xl ${
-              isProjectClicked ? 'text-red-500' : 'hover:text-blue-500'
-            }`}
-          >
-            Project
-          </a>
-        </li>
+    <li className="flex flex-row transform -rotate-90 origin-bottom mb-4 justify-center">
+      <a
+        href="#project"
+        onClick={handleProjectClick}
+        className={`text-base sm:text-lg ${
+          isProjectClicked ? 'text-red-500' : 'hover:text-blue-500'
+        }`}
+      >
+        Project
+      </a>
+    </li>
 
-        <li className="flex flex-row transform -rotate-90 origin-bottom">
-          <a
-            href="#exp"
-            onClick={handleExpClick}
-            className={`text-xl ${
-              isExpClicked ? 'text-red-500' : 'hover:text-blue-500'
-            }`}>
-            Exp
-          </a>
-        </li>
+    <li className="flex flex-row transform -rotate-90 origin-bottom mb-4 justify-center">
+      <a
+        href="#exp"
+        onClick={handleExpClick}
+        className={`text-base sm:text-lg ${
+          isExpClicked ? 'text-red-500' : 'hover:text-blue-500'
+        }`}
+      >
+        Exp
+      </a>
+    </li>
 
-        <li className="flex flex-row transform -rotate-90 origin-bottom">
-          <a
-            href="#about"
-            onClick={handleAboutClick}
-            className={`text-xl ${
-              isAboutClicked ? 'text-red-500' : 'hover:text-blue-500'
-            }`}
-          >
-            About
-          </a>
-        </li>
+    <li className="flex flex-row transform -rotate-90 origin-bottom mb-4 justify-center">
+      <a
+        href="#about"
+        onClick={handleAboutClick}
+        className={`text-base sm:text-lg ${
+          isAboutClicked ? 'text-red-500' : 'hover:text-blue-500'
+        }`}
+      >
+        About
+      </a>
+    </li>
 
-        <li className="flex flex-row transform -rotate-90 origin-bottom">
-          <a
-            href="#contact"
-            onClick={handleContactClick}
-            className={`text-xl ${
-              isContactClicked ? 'text-red-500' : 'hover:text-blue-500'
-            }`}
-          >
-            Contact
-          </a>
-        </li>
-        </ul>
-        {/* ... (kode lainnya) */}
-      </nav>
+    <li className="flex flex-row transform -rotate-90 origin-bottom mb-4 justify-center">
+      <a
+        href="#contact"
+        onClick={handleContactClick}
+        className={`text-base sm:text-lg ${
+          isContactClicked ? 'text-red-500' : 'hover:text-blue-500'
+        }`}
+      >
+        Contact
+      </a>
+    </li>
+  </ul>
+  {/* ... (kode lainnya) */}
+</nav>
 
       {/* Content */}
       <div className="flex-grow bg-cover bg-fixed bg-no-repeat ps-20 pe-10"
          style={{ backgroundImage: 'url("/read-me/img/bgss.jpg")' }}>
         {/* Home Section */}
-        <section id="home" className="min-h-screen flex items-center mx-auto">
+        <section id="home" className="min-h-screen flex items-center mx-auto ">
       <div className="container mx-auto flex flex-col md:flex-row text-left md:text-left">
         <div>
         <p className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold text-white mb-4 font-mono">
@@ -166,19 +164,19 @@ const App = () => {
           <img
             src="./img/bg.jpg"
             alt="Foto Anda"
-            className="w-full md:w-1/3 rounded-xl mx-auto mb-8 md:mb-0 me-5"
+            className="w-full md:w-1/2 rounded-xl mx-auto mb-8 md:mb-0 me-5"
           />
-          <div className="md:w-1/2 mx-auto ps-1 text-center md:text-left">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold font-mono text-white mb-6">Achievements</h1>
-            <ul className="text-xl md:text-lg lg:text-base text-white custom-tracking space-y-3 sm:space-y-5 md:space-y-5">
-              <li>- 8 Times Got First Rank in Elementary School </li>
-              <li>- Top 8 Student In Middle School </li>
-              <li>- Runner-Up Of Genshin Impact Tournament </li>
-              <li>- Design Winner in Classmeeting </li>
-              <li>- Futsal Runner Up in Classmeeting</li>
-              <li>- Band Winner in Classmeeting </li>
-            </ul>
-          </div>
+          <div className="w-full md:w-1/2 mx-auto ps-1 text-center md:text-left">
+  <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold font-mono text-white mb-4 md:mb-6">Achievements</h1>
+  <ul className="text-lg md:text-base text-white custom-tracking space-y-3 sm:space-y-4 md:space-y-4">
+    <li className="text-base md:text-lg lg:text-base">- 8 Times Got First Rank in Elementary School</li>
+    <li className="text-base md:text-lg lg:text-base">- Top 8 Student In Middle School</li>
+    <li className="text-base md:text-lg lg:text-base">- Runner-Up Of Genshin Impact Tournament</li>
+    <li className="text-base md:text-lg lg:text-base">- Design Winner in Class Meeting</li>
+    <li className="text-base md:text-lg lg:text-base">- Futsal Runner Up in Class Meeting</li>
+    <li className="text-base md:text-lg lg:text-base">- Band Winner in Class Meeting</li>
+  </ul>
+</div>
         </div>
 
         {/* Experience */}
@@ -186,21 +184,20 @@ const App = () => {
           <img
             src="./img/bg.jpg"
             alt="Foto Anda"
-            className="w-full md:w-1/3 rounded-xl mx-auto mb-8 md:mb-0 me-5"
+            className="w-full md:w-1/2 rounded-xl mx-auto mb-8 md:mb-0 me-5"
           />
 
-    <div className="md:w-1/2 mx-auto ps-1 text-left">
-      <h1 className="text-5xl font-semibold font-mono text-white mb-6">Experience</h1>
-      <ul className="text-2xl text-white custom-tracking space-y-3 sm:space-y-5 md:space-y-5">
-        <li>- 8 Times Got First Rank in Elementary School </li>
-        <li>- Top 8 Student In Middle School </li>
-        <li>- Runner-Up Of Genshin Impact Tournament </li>
-        <li>- Design Winner in Classmeeting </li>
-        <li>- Futsal Runner Up in Classmeeting</li>
-        <li>- Band Winner in Classmeeting </li>
-      </ul>
-
-  </div>
+<div className="w-full md:w-1/2 mx-auto ps-1 text-center md:text-left">
+  <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold font-mono text-white mb-4 md:mb-6">Experience</h1>
+  <ul className="text-lg md:text-base text-white custom-tracking space-y-3 sm:space-y-4 md:space-y-4">
+    <li className="text-base md:text-lg lg:text-base">- 8 Times Got First Rank in Elementary School</li>
+    <li className="text-base md:text-lg lg:text-base">- Top 8 Student In Middle School</li>
+    <li className="text-base md:text-lg lg:text-base">- Runner-Up Of Genshin Impact Tournament</li>
+    <li className="text-base md:text-lg lg:text-base">- Design Winner in Class Meeting</li>
+    <li className="text-base md:text-lg lg:text-base">- Futsal Runner Up in Class Meeting</li>
+    <li className="text-base md:text-lg lg:text-base">- Band Winner in Class Meeting</li>
+  </ul>
+</div>
 
     
   </div>
@@ -218,7 +215,7 @@ const App = () => {
         <img
           src="./img/ihya2.jpg"
           alt="Foto Anda"
-          className="w-full md:w-1/3 rounded-xl mx-auto mb-8 md:mb-0 me-5"
+          className="w-full md:w-1/2 rounded-xl mx-auto mb-8 md:mb-0 me-5"
         />
         <div className="md:w-1/2 mx-auto text-left">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold font-mono text-white mb-3">
@@ -244,7 +241,7 @@ const App = () => {
 </section>
 
 
-        <div className="fixed sosmed top-5 right-10 p-4">
+        <div className="fixed sosmed top-1 right-1 p-4">
   <div className="flex flex-col gap-4">
     {/* Icon Media Sosial Pertama */}
     <a
