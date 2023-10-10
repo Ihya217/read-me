@@ -28,13 +28,16 @@ a {
 
 
 @media (max-width: 768px) {
-
+  /* .container {
+    padding-right: 10%; 
+  } */
   .text-xl {
     font-size: 1rem;
 
   }
 
   .container-about {
+    padding-left: 70px; /* Ubah padding pada layar seluler */
     margin: auto;
     margin-right: 10%;
     display: flex;
@@ -52,6 +55,10 @@ a {
   
   }
 
+
+
+
+
   .text-3xl {
     font-size: 1.3rem; /* Ukuran font yang lebih kecil pada layar seluler */
     margin-bottom: 13px; 
@@ -67,6 +74,10 @@ a {
   }
 
   /* Menambahkan margin ke konten agar tidak mengenai navbar */
+  .min-h-screen {
+    margin-top: 0px; /* Sesuaikan nilai sesuai dengan kebutuhan Anda */
+    
+  }
   .parallax-background {
     position: relative;
     width: 100%;
@@ -88,6 +99,18 @@ a {
     background: rgba(0, 0, 0, 0.3); /* Warna latar belakang transparan */
     animation: parallaxAnimation 10s linear infinite alternate; /* Ubah durasi dan timing sesuai kebutuhan */
   }
+  
+  @keyframes parallaxAnimation {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(20%); /* Ubah nilai sesuai kebutuhan */
+    }
+  }
+  
+  
+
   
 }
 
@@ -95,68 +118,6 @@ a {
   .sosmed {
     top: 0.8rem; /* Atur jarak dari atas */
     right: 0.8rem; /* Atur jarak dari kanan */
-  }
-
-
-  
-  .text-xl {
-    font-size: 1rem;
-
-  }
-
-  .container-about {
-    margin: auto;
-    margin-right: 10%;
-    display: flex;
-    margin-bottom: 100px;
-    justify-content: center; /* Rata tengah secara horizontal */
-  }
-  
-  .container {/* Ubah padding pada layar seluler */
-    margin: auto;
-    padding: 100px;
-    display: flex;
-    justify-content: center; /* Rata tengah secara horizontal */
-    align-items: center; /* Rata tengah secara vertikal */
-  
-  
-  }
-
-  .text-3xl {
-    font-size: 1.3rem; /* Ukuran font yang lebih kecil pada layar seluler */
-    margin-bottom: 13px; 
-  }
-
-  .text-2xl{
-    font-size: 0.9rem; 
-  }
-
-  .text-9xl {
-    font-size: 4rem; 
-    margin-bottom: 25px; /* Ukuran font yang lebih kecil pada layar seluler */
-  }
-
-  /* Menambahkan margin ke konten agar tidak mengenai navbar */
-  .parallax-background {
-    position: relative;
-    width: 100%;
-    height: 100vh; /* Tinggi sesuaikan dengan kebutuhan */
-    background-image: url("http://localhost:3000/read-me/img/bgss.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    overflow: hidden;
-  }
-  
-  /* Animasi paralaks */
-  .parallax-background::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.3); /* Warna latar belakang transparan */
-    animation: parallaxAnimation 10s linear infinite alternate; /* Ubah durasi dan timing sesuai kebutuhan */
   }
 
 }
