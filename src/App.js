@@ -59,7 +59,7 @@ const App = () => {
         href="#home"
         onClick={handleHomeClick}
         className={`text-base sm:text-lg ${
-          isHomeClicked ? 'text-red-500' : 'hover:text-blue-500'
+          isHomeClicked ? 'text-red-500' : 'hover:text-red-500'
         }`}>
         Home
       </a>
@@ -70,7 +70,7 @@ const App = () => {
         href="#project"
         onClick={handleProjectClick}
         className={`text-base sm:text-lg ${
-          isProjectClicked ? 'text-red-500' : 'hover:text-blue-500'
+          isProjectClicked ? 'text-red-500' : 'hover:text-red-500'
         }`}
       >
         Project
@@ -82,7 +82,7 @@ const App = () => {
         href="#exp"
         onClick={handleExpClick}
         className={`text-base sm:text-lg ${
-          isExpClicked ? 'text-red-500' : 'hover:text-blue-500'
+          isExpClicked ? 'text-red-500' : 'hover:text-red-500'
         }`}
       >
         Exp
@@ -94,7 +94,7 @@ const App = () => {
         href="#about"
         onClick={handleAboutClick}
         className={`text-base sm:text-lg ${
-          isAboutClicked ? 'text-red-500' : 'hover:text-blue-500'
+          isAboutClicked ? 'text-red-500' : 'hover:text-red-500'
         }`}
       >
         About
@@ -106,7 +106,7 @@ const App = () => {
         href="#contact"
         onClick={handleContactClick}
         className={`text-base sm:text-lg ${
-          isContactClicked ? 'text-red-500' : 'hover:text-blue-500'
+          isContactClicked ? 'text-red-500' : 'hover:text-red-500'
         }`}
       >
         Contact
@@ -117,13 +117,13 @@ const App = () => {
 </nav>
 
       {/* Content */}
-      <div className="flex-grow bg-cover bg-fixed bg-no-repeat ps-20 pe-5 "
+      <div className="flex-grow bg-cover bg-fixed bg-no-repeat "
          style={{ backgroundImage: 'url("/read-me/img/bgss.jpg")' }}>
         {/* Home Section */}
-        <section id="home" className="min-h-screen flex items-center mx-auto ">
+        <section id="home" className="min-h-screen flex items-center mx-auto  ps-20 pe-5 ">
       <div className="container mx-auto flex flex-col md:text-center lg:text-center">
         <div>
-        <p className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold text-white mb-4 font-mono">
+        <p className="text-md md:text-3xl lg:text-4xl xl:text-5xl font-semibold text-white mb-4 font-mono">
   M. Ihya Ulumuddin
 </p>
           <h1 className="text-5xl md:text-7xl lg:text-9xl xl:text-10xl font-semibold text-white mb-4">
@@ -138,12 +138,11 @@ const App = () => {
 
 
         {/* Project Section */}
-        <section id="project" className="min-h-screen flex items-center mx-auto mb-5">
-      {/* Achievement */}
+        <section id="project" className="min-h-screen flex items-center mx-auto mb-5  ps-20 pe-5 ">
       <div className="container mx-auto text-center md:text-left">
         <div className="container mx-auto p-6 flex flex-col items-center">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-white font-mono mb-4">
-            Project Section
+            Project
           </h1>
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-white font-mono">
             Coming Soon
@@ -157,46 +156,46 @@ const App = () => {
 
 
 
-    <section id="exp" className="min-h-screen flex items-center justify-center">
+    <section id="exp" className="min-h-screen flex items-center justify-center  ps-20 pe-5">
   <div className='container mx-auto row'>
 
     {/* Achievements */}
     <div className="container mx-auto flex flex-col md:flex-row text-center mb-20">
       <img
-        src="./img/bg.jpg"
+        src="./img/Achievements.png"
         alt="Foto Anda"
         className="w-full md:w-1/2 lg:w-1/3 rounded-xl mx-auto mb-8 md:mb-0 md:me-5"
       />
-      <div className="w-full md:w-1/2 lg:w-1/3 mx-auto ps-1 text-left md:text-left">
-        <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold font-mono text-white mb-4 md:mb-6">Achievements</h1>
-        <ul className="text-lg md:text-base text-white custom-tracking space-y-2 sm:space-y-4 md:space-y-4 list-disc">
-          <li className="text-base md:text-lg lg:text-base"> 8 Times Got First Rank in Elementary School</li>
-          <li className="text-base md:text-lg lg:text-base"> Top 8 Student In Middle School</li>
-          <li className="text-base md:text-lg lg:text-base"> Runner-Up Of Genshin Impact Tournament</li>
-          <li className="text-base md:text-lg lg:text-base"> Design Winner in Class Meeting</li>
-          <li className="text-base md:text-lg lg:text-base"> Futsal Runner Up in Class Meeting</li>
-          <li className="text-base md:text-lg lg:text-base"> Band Winner in Class Meeting</li>
-        </ul>
-      </div>
+      <div className="w-full md:w-1/2 lg:w-1/3 mx-auto ps-1 text-left md:text-left border border-white rounded-xl p-4">
+  <h1 className="text-3xl md:text-4xl lg:text-4xl text-center font-semibold font-mono text-white mb-4 md:mb-6">Achievements</h1>
+  <ul className="text-lg text-center md:text-base text-white custom-tracking space-y-2 sm:space-y-4 md:space-y-3">
+    <li className="text-sm md:text-lg lg:text-base"> 8 Times Got First Rank in Elementary School</li>
+    <li className="text-sm md:text-lg lg:text-base"> Top 8 Student In Middle School</li>
+    <li className="text-sm md:text-lg lg:text-base"> Runner-Up Of Genshin Impact Tournament</li>
+    <li className="text-sm md:text-lg lg:text-base"> Design Winner in Class Meeting</li>
+    <li className="text-sm md:text-lg lg:text-base"> Futsal Runner Up in Class Meeting</li>
+    <li className="text-sm md:text-lg lg:text-base"> Band Winner in Class Meeting</li>
+  </ul>
+</div>
+
     </div>
 
     {/* Experience */}
     <div className="container mx-auto flex flex-col md:flex-row text-center">
       <img
-        src="./img/bg.jpg"
+        src="./img/Exp.png"
         alt="Foto Anda"
         className="w-full md:w-1/2 lg:w-1/3 rounded-xl mx-auto mb-8 md:mb-0 md:me-5"
       />
 
-      <div className="w-full md:w-1/2 lg:w-1/3 mx-auto ps-1 text-left md:text-left " >
-        <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold font-mono text-white mb-4 md:mb-6">Experience</h1>
-        <ul className="text-lg md:text-base text-white custom-tracking space-y-3 sm:space-y-4 md:space-y-4 list-disc">
-          <li className="text-base md:text-lg lg:text-base"> 8 Times Got First Rank in Elementary School</li>
-          <li className="text-base md:text-lg lg:text-base"> Top 8 Student In Middle School</li>
-          <li className="text-base md:text-lg lg:text-base"> Runner-Up Of Genshin Impact Tournament</li>
-          <li className="text-base md:text-lg lg:text-base"> Design Winner in Class Meeting</li>
-          <li className="text-base md:text-lg lg:text-base"> Futsal Runner Up in Class Meeting</li>
-          <li className="text-base md:text-lg lg:text-base"> Band Winner in Class Meeting</li>
+      <div className="w-full md:w-1/2 lg:w-1/3 mx-auto ps-1 text-left md:text-left  border border-white rounded-xl p-4 " >
+        <h1 className="text-3xl md:text-4xl lg:text-4xl text-center font-semibold font-mono text-white mb-4 md:mb-6">Experience</h1>
+        <ul className="text-lg md:text-base text-white text-center custom-tracking space-y-3 sm:space-y-4 md:space-y-3">
+          <li className="text-sm md:text-lg lg:text-base"> Becoming the Chairman of the Red Cross Youth </li>
+          <li className="text-sm md:text-lg lg:text-base"> Becoming the Chairman of the Teen Counselor Organization. </li>
+          <li className="text-sm md:text-lg lg:text-base"> Join Debate Competition of South Borneo</li>
+          <li className="text-sm md:text-lg lg:text-base"> Have live-streamed gaming on YouTube</li>
+          <li className="text-sm md:text-lg lg:text-base"> Becoming a candidate for Student Council President in junior high school and senior high school</li>
         </ul>
       </div>
     </div>
@@ -208,7 +207,7 @@ const App = () => {
 
 
  {/* About Section */}
- <section id="about" className="min-h-screen flex items-center justify-center">
+ <section id="about" className="min-h-screen flex items-center justify-center  ps-20 pe-5">
  <div className="container mx-auto flex flex-col md:flex-row text-center">
       <img
         src="./img/ihya2.jpg"
@@ -217,8 +216,8 @@ const App = () => {
       />
 
       <div className="w-full md:w-1/2 lg:w-1/3 mx-auto ps-1 text-left md:text-left " >
-        <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold font-mono text-white mb-2 md:mb-1">Hello There</h1>
-        <p className="text-base md:text-lg lg:text-xl lg:pe-2 text-white">
+        <h1 className="text-3xl md:text-4xl lg:text-4xl font-semibold font-mono text-white mb-2 md:mb-1">Hello There</h1>
+        <p className="text-sm md:text-lg lg:text-base leading-6 text-white" style={{ lineHeight: '1.5' }}>
             Your First Impressions: "Wow, this kid's a huge Otaku! 😄 I'm Muhammad Ihya Ulumuddin, a Software Developer. I craft digital experiences and stay updated on tech trends. When not coding, I explore anime, manga, and gaming. Technology fuels my creativity, and I love innovative projects. Connect with me for tech talks, anime suggestions, or creative collaborations. Let's make the digital world more exciting! 😄🚀🎮"
           </p>
       </div>
@@ -234,7 +233,7 @@ const App = () => {
   {/* Achievement */}
   <div className="container mx-auto text-left">
     <div className="container mx-auto p-6 flex flex-col items-center">
-      <h1 className="text-3xl font-semibold text-white mb-3 font-mono">Contact Section</h1>
+      <h1 className="text-3xl font-semibold text-white mb-3 font-mono">Contact</h1>
       <h1 className="text-3xl font-semibold text-white font-mono">Coming Soon</h1>
       {/* Isi dari bagian Project */}
     </div>
