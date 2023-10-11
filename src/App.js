@@ -50,7 +50,7 @@ const App = () => {
 
   
   return (
-    <div className="fontFamily: 'Araboto Medium, sans-serif' flex">
+    <div className="fontFamily: 'Araboto Medium, sans-serif' flex bg-black">
       {/* Navbar */}
       <nav className="flex flex-col fixed top-0 left-0 h-full bg-transparent text-white mt-20 ps-1">
   <ul className="ms-4 space-y-14 sm:space-y-14 md:space-y-14">
